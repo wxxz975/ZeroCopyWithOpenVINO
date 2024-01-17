@@ -1,0 +1,18 @@
+#c++
+*.d
+*.obj
+*.o
+*.tlog
+*.lastbuildstate
+*.idb
+*.pdb
+*~
+*.swp
+*.so
+
+# build
+build/**
+
+.vscode/**
+
+
