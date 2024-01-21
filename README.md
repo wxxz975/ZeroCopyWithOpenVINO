@@ -13,7 +13,7 @@
 
 - Intel开发板：确保Intel xboard 正确配置c++开发环境。
 
-- ResNet50模型：从[OpenVINO Model Zoo](https://github.com/openvinotoolkit/open_model_zoo)下载ResNet50模型，或使用其他适当的预训练ResNet50模型, demo中的resnet50 由ImageNet1000数据集训练。
+- ResNet50模型：从[OpenVINO Model Zoo](https://github.com/openvinotoolkit/open_model_zoo)下载ResNet50模型，或使用其他适当的预训练ResNet50模型, demo中的[resnet50v2](models/resnet50v2.onnx) 由ImageNet数据集训练。
 
 ## 运行
 
