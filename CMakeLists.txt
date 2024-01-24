@@ -17,11 +17,10 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBAV libavformat libavcodec libswscale libavutil)
 find_package(OpenVINO COMPONENTS Runtime)
 find_package(OpenCL)
-find_package(gflags)
 find_package(OpenCV)
 
 
-if (LIBAV_FOUND AND OpenVINO_FOUND AND OpenCL_FOUND AND gflags_FOUND)
+if (LIBAV_FOUND AND OpenVINO_FOUND AND OpenCL_FOUND)
 
     #file (GLOB MAIN_SRC *.cpp)
     #file (GLOB MAIN_HEADERS *.h)
@@ -42,7 +41,6 @@ if (LIBAV_FOUND AND OpenVINO_FOUND AND OpenCL_FOUND AND gflags_FOUND)
         ${LIBAV_LIBRARIES}
         openvino::runtime
         ${OpenCL_LIBRARY}
-        gflags
         ${OpenCV_LIBRARIES}
         )
 
